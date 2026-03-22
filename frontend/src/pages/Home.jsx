@@ -351,7 +351,7 @@ export default function Home() {
       }
 
       if (value?.error) {
-        return <div className="error-message">❌ {String(value.error)}</div>;
+        return <div className="error-message"> {String(value.error)}</div>;
       }
 
       if (value === null || value === undefined || value === "") {
@@ -419,7 +419,7 @@ export default function Home() {
             return (
               <div className="pros-cons-container">
                 <div className="pros-list">
-                  <h4>✅ Pros ({Array.isArray(value?.pros) ? value.pros.length : 0})</h4>
+                  <h4> Pros ({Array.isArray(value?.pros) ? value.pros.length : 0})</h4>
                   {Array.isArray(value?.pros) && value.pros.length > 0 ? (
                     <ul>
                       {value.pros.map((p, i) => (
@@ -431,7 +431,7 @@ export default function Home() {
                   )}
                 </div>
                 <div className="cons-list">
-                  <h4>❌ Cons ({Array.isArray(value?.cons) ? value.cons.length : 0})</h4>
+                  <h4> Cons ({Array.isArray(value?.cons) ? value.cons.length : 0})</h4>
                   {Array.isArray(value?.cons) && value.cons.length > 0 ? (
                     <ul>
                       {value.cons.map((c, i) => (
@@ -533,7 +533,7 @@ export default function Home() {
       );
     } catch (renderError) {
       console.error("Render error:", renderError, "Value:", value);
-      return <div className="error-message">⚠️ Render error - Unable to display content</div>;
+      return <div className="error-message"> Render error - Unable to display content</div>;
     }
   };
 
@@ -546,7 +546,6 @@ export default function Home() {
 
   return (
     <div className="app-layout">
-      {/* SIDEBAR */}
       <div className="sidebar">
         <div className="sidebar-header">
           <div className="sidebar-branding">
@@ -559,7 +558,7 @@ export default function Home() {
         </div>
 
         <div className="history-section">
-          <h3>📁 Document History</h3>
+          <h3> Document History</h3>
           {history.length === 0 ? (
             <div className="empty-state">No documents yet. Upload one!</div>
           ) : (
@@ -585,7 +584,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* MAIN CONTENT */}
+      
       <div className="main-content">
         {!docId ? (
           <div className="upload-section">
@@ -631,7 +630,7 @@ export default function Home() {
                   onClick={upload}
                   disabled={loading}
                 >
-                  {loading ? "⏳ Uploading..." : "🚀 Upload Document"}
+                  {loading ? " Uploading..." : " Upload Document"}
                 </button>
               )}
             </div>
@@ -653,7 +652,7 @@ export default function Home() {
                   onClick={runAnalysis}
                   disabled={analyzing}
                 >
-                  {analyzing ? "🔄 Analyzing..." : "🔍 Run Full Analysis"}
+                  {analyzing ? " Analyzing..." : " Run Full Analysis"}
                 </button>
               </div>
             </div>
@@ -683,7 +682,7 @@ export default function Home() {
                     <div className="result-header">
                       <h3>{endpoints.find(e => e.key === activeTab)?.label}</h3>
                       {results[activeTab]?.error && (
-                        <span className="error-badge">⚠️ Error</span>
+                        <span className="error-badge">An Error Occured</span>
                       )}
                     </div>
                     {renderContent(activeTab, results[activeTab])}
