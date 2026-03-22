@@ -80,5 +80,6 @@ npm run dev
 
 * ScaleDown API for text compression
 * Open-source NLP tools and libraries
+* Note: System developed locally and deployed before the creation of GitHub repository.
 
 
