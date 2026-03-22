@@ -69,6 +69,7 @@ python runthis.py
 //for frontend
 
 cd frontend
+npm i
 npm run dev
 
 ```
