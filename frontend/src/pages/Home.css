@@ -20,7 +20,6 @@ body, html, #root {
   overflow: hidden;
 }
 
-/* SIDEBAR */
 .sidebar {
   width: 320px;
   min-width: 320px;
@@ -164,8 +163,6 @@ body, html, #root {
   font-size: 11px;
   font-weight: 600;
 }
-
-/* MAIN CONTENT */
 .main-content {
   flex: 1;
   min-width: 0;
@@ -347,7 +344,6 @@ body, html, #root {
   cursor: not-allowed;
 }
 
-/* DASHBOARD */
 .dashboard-container {
   flex: 1;
   display: flex;
@@ -399,7 +395,6 @@ body, html, #root {
   min-width: 200px;
 }
 
-/* DASHBOARD GRID */
 .dashboard-grid {
   display: flex;
   flex: 1;
@@ -570,7 +565,6 @@ body, html, #root {
   font-weight: 600;
 }
 
-/* CONTENT RENDERING */
 .content-text {
   font-size: 18px;
   line-height: 1.8;
@@ -783,7 +777,6 @@ body, html, #root {
   line-height: 1.6;
 }
 
-/* PROS/CONS */
 .pros-cons-container {
   display: flex;
   flex-direction: column;
@@ -860,7 +853,7 @@ body, html, #root {
   font-style: italic;
 }
 
-/* RISK */
+
 .risk-list {
   display: flex;
   flex-direction: column;
@@ -908,7 +901,7 @@ body, html, #root {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* COMPRESSION */
+
 .compression-result-inline {
   padding: 20px;
 }
@@ -970,7 +963,7 @@ body, html, #root {
   margin: 0;
 }
 
-/* RIGHT PANEL */
+
 .right-panel {
   width: 420px;
   min-width: 420px;
@@ -990,7 +983,7 @@ body, html, #root {
   flex-direction: column;
 }
 
-/* SCROLLBAR */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -1010,7 +1003,7 @@ body, html, #root {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* ANIMATIONS */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1037,7 +1030,6 @@ body, html, #root {
   color: white;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .tabs-container {
     grid-template-columns: repeat(4, 1fr);
@@ -1268,7 +1260,6 @@ body, html, #root {
   }
 }
 
-/* Text representation styles */
 .text-section {
   margin-bottom: 12px;
   padding: 12px;
@@ -1287,7 +1278,6 @@ body, html, #root {
   margin-bottom: 0;
 }
 
-/* Impact content styling */
 .impact-content {
   display: flex;
   flex-direction: column;
@@ -1300,7 +1290,6 @@ body, html, #root {
   border-left-width: 2px;
 }
 
-/* Risk item styling */
 .risk-item {
   margin-bottom: 16px;
   border-radius: 12px;
@@ -1369,16 +1358,12 @@ body, html, #root {
   color: rgba(255, 255, 255, 0.85);
   word-break: break-word;
 }
-
-/* No items styling */
 .no-items {
   color: rgba(255, 255, 255, 0.5);
   font-style: italic;
   margin: 0;
   padding: 10px;
 }
-
-/* Compression text styling */
 .compressed-text {
   display: flex;
   flex-direction: column;
@@ -1395,7 +1380,6 @@ body, html, #root {
   border-radius: 8px;
 }
 
-/* Content text adjustments */
 .content-text {
   display: flex;
   flex-direction: column;
@@ -1413,7 +1397,6 @@ body, html, #root {
   margin-bottom: 0;
 }
 
-/* Pros/Cons list items */
 .pros-list ul li,
 .cons-list ul li {
   margin-bottom: 10px;
@@ -1421,7 +1404,6 @@ body, html, #root {
   word-break: break-word;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .text-section {
     padding: 10px;
