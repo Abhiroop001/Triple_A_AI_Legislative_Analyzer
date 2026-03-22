@@ -355,7 +355,7 @@ export default function Home() {
       }
 
       if (value === null || value === undefined || value === "") {
-        return <div className="loading">⏳ Click "Run Full Analysis" or wait for data...</div>;
+        return <div className="loading"> Click "Run Full Analysis" or wait for data...</div>;
       }
 
       if (typeof value === 'string' || typeof value === 'number') {
