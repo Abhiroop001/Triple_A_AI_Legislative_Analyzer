@@ -34,7 +34,7 @@ LegisAid is an AI-powered legislative analysis tool designed to simplify complex
 ##  Tech Stack
 
 * **Frontend:** HTML, CSS, JavaScript
-* **Backend:** Python / Flask
+* **Backend:** Python / FastAPI
 * **AI Models:** NLP-based processing
 * **Compression:** ScaleDown API
 
